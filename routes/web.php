@@ -7,6 +7,10 @@ Route::get('/', function () {
 });
 
 
+Route::get('/rv', function(){
+    return view('revaview');
+})->name('rv');
+
 Route::get('/uyelhihi', function(){ // uri = nama link
     return view('AurelView');
 })->name('aurel');
@@ -14,4 +18,5 @@ Route::get('/uyelhihi', function(){ // uri = nama link
 Route::get('/teriru', function () {
     return view('teraView');
 })->name('tera');
+
 
